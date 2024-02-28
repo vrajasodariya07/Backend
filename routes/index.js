@@ -7,7 +7,7 @@ router.post('/insert_user',user.insert)
 router.get('/update_user/:id',user.Update);
 router.get('/delete_user/:id',user.Delete)
 //==================  View data  =========================
-router.post("/view_user",user.view_user);
+router.post("/view",user.get_data);
 router.get('/view_user/:id',user.view_user)
 //==================  Login and Logout  ====================
 router.post('/login_user',user.login)

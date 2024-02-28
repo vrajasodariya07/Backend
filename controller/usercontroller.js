@@ -92,4 +92,13 @@ exports.logout = async (req,res) =>{
    })
 
 }
+exports.get_data = async ( req,res ) => {
+
+    var data = await usermodel.find();
+
+    res.status(200).json({
+        data
+    })
+ }
+
 
